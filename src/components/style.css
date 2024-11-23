@@ -1,0 +1,210 @@
+@keyframes expand {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animate-expand {
+    animation: expand 1s ease-out forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slideIn {
+    animation: slideIn 0.5s forwards;
+  }
+  
+  .animate-slideIn.delay-0 {
+    animation-delay: 0s;
+  }
+  
+  .animate-slideIn.delay-100 {
+    animation-delay: 0.1s;
+  }
+  
+  .animate-slideIn.delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animate-slideIn.delay-300 {
+    animation-delay: 0.3s;
+  }
+  .animate-slideIn.delay-400 {
+    animation-delay: 0.2s;
+  }
+  .animate-slideIn.delay-500 {
+    animation-delay: 0.1s;
+  }
+  .animate-slideIn.delay-600 {
+    animation-delay: 0s;
+  }
+  
+  /* The wrapper container */
+.scroller-wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f0f0f0; /* Background color for contrast */
+}
+
+/* The actual scrolling text container */
+.scroller {
+  display: flex;
+  animation: scrollText 20s linear infinite; /* Infinite scrolling animation */
+}
+
+/* Individual text elements */
+.infinite-text {
+  font-size: 2rem;
+  padding: 0 20px;
+  white-space: nowrap;
+  animation: fadeEffect 20s infinite; /* Opacity change animation */
+}
+
+/* Keyframe for scrolling effect */
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Keyframe for fading effect */
+@keyframes fadeEffect {
+  0%, 100% {
+    opacity: 0.2; /* Low opacity at the edges */
+  }
+  50% {
+    opacity: 1; /* High opacity at the center */
+  }
+}
+
+/* ----------------------------------------Infinite Scrolling ---------------------------------------- */
+
+/* The wrapper container */
+.scroller-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #cdcccc; /* Background color for contrast */
+    height: 100px; /* Set height for scrolling effect */
+  }
+  
+  /* The actual scrolling text container */
+  .scroller {
+    display: flex;
+    animation: scrollText 20s linear infinite; /* Infinite scrolling animation */
+  }
+  
+  /* Individual text elements */
+  .infinite-text {
+    color: black;
+    font-size: 2rem;
+    padding: 0 20px;
+    white-space: nowrap;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity on hover */
+  }
+  
+  /* Pause the animation on hover */
+  .scroller-wrapper:hover .scroller {
+    animation-play-state: paused; /* Stops scrolling on hover */
+  }
+  
+  /* Keyframe for scrolling effect */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    100% {
+      transform: translateX(-50%); /* Scroll half of the total text width */
+    }
+  }
+  
+/* -----------------------------Intruduction---------------------------- */
+
+/* Introduction.css */
+.introduction-bg {
+  background-image: url('https://images.unsplash.com/photo-1487088678257-3a541e6e3922?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  width: 100%;   /* Full width */
+  position: relative; /* To position overlay and text */
+  border-radius: 20px; /* Adjust the value for the desired roundness */
+  overflow: hidden; /* Ensures the content respects the border radius */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+/* -------------------------------------------Mission-------------------------------------- */
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-in-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.animate-slide-up-delay {
+  animation: slideUp 1.5s ease-in-out;
+}
+
+/* -----------------------------------Principal----------------------------------------- */
+
