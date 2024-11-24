@@ -36,7 +36,7 @@ function Page() {
                             <textarea
                                 placeholder="Your Message"
                                 aria-label="Your Message"
-                                rows="5"
+                                rows={5}
                                 className="px-3 py-2 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
                             ></textarea>
                         </div>

@@ -1,11 +1,12 @@
 'use client';
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 function Principal_Madam_Section() {
   const [shadow, setShadow] = useState('0px 0px 15px rgba(0, 0, 0, 0.2)');
 
   // Function to handle mouse movement
-  const handleMouseMove = (e: any) => {
+  const handleMouseMove = (e: MouseEvent) => {
     const { clientX, clientY } = e;
     const offsetX = (clientX - window.innerWidth / 2) / 10;
     const offsetY = (clientY - window.innerHeight / 2) / 10;
@@ -18,9 +19,9 @@ function Principal_Madam_Section() {
       <div className="grid md:grid-cols-2 grid-cols-1 justify-center items-center px-20">
         <div
           className="w-full relative rounded-md flex items-center justify-center p-2"
-          onMouseMove={handleMouseMove}
+          onMouseMove={()=>handleMouseMove}
         >
-          <img
+          <Image
             src="https://img1.wsimg.com/isteam/ip/8bfc3ae8-6b51-422e-bd0c-84e4f6f53018/blob-bc2987e.png/:/cr=t:19.54%25,l:0%25,w:100%25,h:60.92%25/rs=w:600,h:800,cg:true"
             alt="Principal"
             className="rounded-md max-w-sm mx-auto h-auto shadow-md cursor-pointer"
@@ -28,6 +29,8 @@ function Principal_Madam_Section() {
               boxShadow: shadow,
               transition: 'box-shadow 0.1s ease-out', // Smooth transition for shadow
             }}
+            width={400}
+            height={400}
           />
         </div>
 

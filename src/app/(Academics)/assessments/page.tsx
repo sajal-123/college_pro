@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 function Page() {
@@ -14,11 +15,13 @@ function Page() {
       <div className="max-w-4xl mx-auto">
         {/* Image Section with animation */}
         <div className="flex justify-center mb-6">
-          <img
+          <Image
             src="https://img1.wsimg.com/isteam/ip/8bfc3ae8-6b51-422e-bd0c-84e4f6f53018/assessment.jpg/:/cr=t:0%25,l:0.75%25,w:98.5%25,h:100%25/rs=w:400,h:400,cg:true"
             alt="Assessment"
             className={`w-full max-w-xs h-auto rounded-lg transition-transform duration-500 ease-in-out ${isVisible ? 'transform scale-105' : 'opacity-0'}`}
             style={{ transition: 'opacity 1s ease-in-out' }}
+            width={400}
+            height={400}
           />
         </div>
 
