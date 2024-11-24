@@ -10,7 +10,7 @@ function Page() {
   }, []);
 
   return (
-    <div className="p-6 bg-gradient-to-bl from-blue-500 via-blue-300 to-blue-500">
+    <div className="p-6 bg-gradient-to-bl font-base from-blue-500 via-blue-300 to-blue-500">
       <div className="max-w-4xl mx-auto">
         {/* Image Section with animation */}
         <div className="flex justify-center mb-6">
@@ -24,13 +24,13 @@ function Page() {
 
         {/* Content Section */}
         <div className="space-y-6 text-gray-800">
-          <h1 className="text-4xl font-semibold text-center text-blue-600">Assessment</h1>
+          <h1 className="text-5xl font-semibold text-center text-blue-600">Assessment</h1>
           <p className="text-lg text-white">
             There will be an Internal Evaluation System for classes:
           </p>
 
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-blue-800">L.K.G., U.K.G. and II:</h2>
+            <h2 className="text-3xl font-semibold text-blue-800">L.K.G., U.K.G. and II:</h2>
             <p className="text-white">
               Students will be evaluated through their everyday work, class
               response, participation in various co-scholastic activities, and
@@ -40,7 +40,7 @@ function Page() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-blue-800">Classes III-V:</h2>
+            <h2 className="text-3xl font-semibold text-blue-800">Classes III-V:</h2>
             <p className="text-white">
               Evaluation is divided into two terms. Along with Periodic tests,
               internal assessment will be taken. Internal assessment will be
@@ -51,7 +51,7 @@ function Page() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-blue-800">Classes VI-XII:</h2>
+            <h2 className="text-3xl font-semibold text-blue-800">Classes VI-XII:</h2>
             <p className="text-white">
               The examination pattern for class XI will be spread over the whole
               year in Unit tests, Half-yearly exams, and Annual examination of 80
@@ -64,27 +64,27 @@ function Page() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-blue-800">Subject Options for Class XI:</h2>
+            <h2 className="text-3xl font-semibold text-blue-800">Subject Options for Class XI:</h2>
             <p className="text-white">
               To get admission in class XI, students have the following subject
               options:
             </p>
-            <ul className="list-disc pl-6">
-              <li className="font-semibold text-white">1. SCIENCE STREAM</li>
+            <ul className="list-disc text-lg font-base text-white pl-6">
+              <li className="font-semibold text-xl text-blue-700"> SCIENCE STREAM</li>
               <ul className="list-inside list-decimal pl-4">
                 <li>Medical: English, Physics, Chemistry, Biology, Maths, I.P., Physical Education.</li>
                 <li>Engineering: English, Physics, Chemistry, Biology, Maths, CS, Physical Education.</li>
               </ul>
-              <li className="font-semibold text-white">2. COMMERCE STREAM (With Maths)</li>
+              <li className="font-semibold  text-xl text-blue-700"> COMMERCE STREAM (With Maths)</li>
               <ul className="list-inside list-decimal pl-4">
                 <li>English, Maths, Accountancy, Business Studies, Economics, Physical Education.</li>
               </ul>
-              <li className="font-semibold text-white">3. COMMERCE (Without Maths)</li>
+              <li className="font-semibold text-xl text-blue-700"> COMMERCE (Without Maths)</li>
               <ul className="list-inside list-decimal pl-4">
                 <li>English, Information Technology / Physical Education, Accountancy, Business Studies, Economics.</li>
               </ul>
-              <li className="font-semibold text-white">4. ARTS/HUMANITIES</li>
-              <ul className="list-inside list-decimal pl-4">
+              <li className="font-semibold text-xl text-blue-700"> ARTS/HUMANITIES</li>
+              <ul className="list-inside  list-decimal pl-4">
                 <li>English Core, Hindi Elective, Political Science, Economics, Sociology, Physical Education.</li>
               </ul>
             </ul>

@@ -206,5 +206,36 @@
   animation: slideUp 1.5s ease-in-out;
 }
 
-/* -----------------------------------Principal----------------------------------------- */
+/* -----------------------------------LOGO----------------------------------------- */
+
+/* Glowing Text Animation */
+@keyframes glowAnimation {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.glow {
+  animation: glowAnimation 1.5s ease-in-out infinite;
+}
+
+/* Bouncing Text Animation */
+@keyframes bounceAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounceAnimation 1s infinite;
+}
 

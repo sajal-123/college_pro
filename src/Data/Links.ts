@@ -24,9 +24,7 @@ export const Links: Link[] = [
         sublinks: [
             { label: "Procedure", link: '/admission-procedure', isSublinkns: false },
             { label: "Registration Form", link: '/registration-form', isSublinkns: false },
-            { label: "Admission/Withdrawal rules", link: '/admission-withdrawal', isSublinkns: false },
-            { label: "Guiding Students to Pursue", link: '/guiding-students', isSublinkns: false },
-            { label: "Diligence and Respect", link: '/diligence-respect', isSublinkns: false }
+            { label: "Admission/Withdrawal rules", link: '/Admission_&_Withdrawal_Rule', isSublinkns: false }
         ]
     },
     {

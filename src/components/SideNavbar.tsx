@@ -33,7 +33,7 @@ function SideNavbar({ setMenuOpen }: SideNavbarProps) {
                     <h1 className="text-2xl font-bold">Logo</h1>
                 </div>
                     <button
-                        className="text-white hover:scale-125 duration-300  z-20 hover:font-bold font-bold text-2xl absolute right-6 md:hidden"
+                        className="text-white hover:scale-125 duration-300  z-20 hover:font-bold font-bold text-2xl absolute right-6 lg:hidden"
                         onClick={handleMenuToggle} // Toggle menu on click
                     >
                         <MdCancel/>

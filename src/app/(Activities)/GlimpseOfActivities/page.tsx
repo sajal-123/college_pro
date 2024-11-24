@@ -16,7 +16,7 @@ import slide_image_4 from '@/assets/images/img4.jpg';
 
 function Page() {
   return (
-    <div></div>
+    <div className='h-screen w-full'></div>
   );
 }
 

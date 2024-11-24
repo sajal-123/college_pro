@@ -31,19 +31,19 @@ const Navbar = () => {
               className="h-10 w-10 mr-2 cursor-pointer"
             />
           </Link>
-          <h1 className="text-2xl font-bold text-white">Logo</h1>
-        </div>
+          <h1 className="text-2xl font-bold text-white italic animate-bounce glow">vishalbhartischool</h1>
+          </div>
 
         {/* Hamburger Menu */}
         <button
-          className="text-white font-bold text-2xl absolute right-6 md:hidden"
+          className="text-white font-bold text-2xl absolute right-6 lg:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <MdCancel /> : <MdMenu />}
         </button>
 
         {/* Links Section (Desktop Menu) */}
-        <div className=" md:text-lg lg:text-xl text-md hidden md:flex gap-4 items-center z-20">
+        <div className=" md:text-lg lg:text-xl text-md hidden lg:flex gap-4 items-center z-20">
           {Links.map((link: NavLink, index: number) => (
             <div key={index} className={`relative flex opacity-0 ${animateLinks ? `animate-slideIn delay-${index * 100}` : ''}`}
 >
@@ -77,7 +77,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden z-20 absolute top-0 p-2 left-0 w-full bg-blue-500 shadow-lg transition-transform duration-500 ease-in-out transform ${
+          className={`lg:hidden z-20 absolute top-0 p-2 left-0 w-full bg-blue-500 shadow-lg transition-transform duration-500 ease-in-out transform ${
             menuOpen ? 'translate-y-0' : '-translate-y-[400px]'
           }`}
         >
