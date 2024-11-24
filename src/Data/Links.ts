@@ -13,7 +13,7 @@ export const Links: Link[] = [
        
     },
     {
-        label: "INFRASTRUCTURE",
+        label: "Infrastructure",
         link: '/Infrastructure',
         isSublinkns: false
      

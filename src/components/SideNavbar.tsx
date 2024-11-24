@@ -25,12 +25,12 @@ function SideNavbar({ setMenuOpen }: SideNavbarProps) {
                         <Image
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2aI_6Ty_nZ95DmZc6V0F0q7vfSkX3s4kaMA&s"
                             alt="Logo"
-                            className=" mr-2 cursor-pointer"
-                            height={10}
-                            width={10}
+                            className=" mr-2 rounded-full cursor-pointer"
+                            height={30}
+                            width={30}
                         />
                     </Link>
-                    <h1 className="text-2xl font-bold">Logo</h1>
+                    <h1 className="text-2xl font-bold italic">Vishal Bharti School</h1>
                 </div>
                     <button
                         className="text-white hover:scale-125 duration-300  z-20 hover:font-bold font-bold text-2xl absolute right-6 lg:hidden"
@@ -55,6 +55,7 @@ function SideNavbar({ setMenuOpen }: SideNavbarProps) {
                                         <Link
                                             key={subIndex}
                                             href={sublink.link || '#'}
+                                            onClick={handleMenuToggle}
                                             className="block px-4 py-2 text-blue-500 hover:bg-blue-100 whitespace-nowrap"
                                         >
                                             {sublink.label}
@@ -67,6 +68,7 @@ function SideNavbar({ setMenuOpen }: SideNavbarProps) {
                                 <Link
                                     href={link.link || '#'}
                                     className="hover:text-blue-300 transition duration-300"
+                                    onClick={handleMenuToggle}
                                 >
                                     {link.label}
                                 </Link>

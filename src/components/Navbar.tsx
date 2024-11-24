@@ -31,7 +31,7 @@ const Navbar = () => {
               className="h-10 w-10 mr-2 cursor-pointer"
             />
           </Link>
-          <h1 className="text-2xl font-bold text-white italic animate-bounce glow">vishalbhartischool</h1>
+          <h1 className="text-2xl font-bold text-white italic ">Vishal Bharti School</h1>
           </div>
 
         {/* Hamburger Menu */}
